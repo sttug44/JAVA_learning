@@ -1,3 +1,55 @@
 j结束外部循环
 1.借助boolean变量结束外部循环
 2.使用标签结束外部循环
+
+Math.abs可以返回一个数的绝对值
+
+`Double.MAX_VALUE` 是 Java 中 `double` 数据类型的最大取值。它是一个常量，表示 `double` 类型可以表示的最大正有限浮点数的值。
+根据 Java 的规范，`Double.MAX_VALUE` 的值为 1.7976931348623157 * 10^308。这个值是一个非常大的数，可以用来表示接近无限大的范围。
+在代码示例中，通过将 `nearest_gap` 的初始值设置为 `Double.MAX_VALUE`，可以确保在比较差距时，第一个计算的差距是一个较大的值。这样就可以在后续的循环中找到真正的最接近的分数。
+Byte.MAX_VALUE: 表示 byte 数据类型的最大取值，其值为 127。
+Short.MAX_VALUE: 表示 short 数据类型的最大取值，其值为 32767。
+Integer.MAX_VALUE: 表示 int 数据类型的最大取值，其值为 2147483647。
+Long.MAX_VALUE: 表示 long 数据类型的最大取值，其值为 9223372036854775807L。
+Float.MAX_VALUE: 表示 float 数据类型的最大取值，其值为 3.4028235 * 10^38。
+Character.MAX_VALUE: 表示 char 数据类型的最大取值，其值为 65535。
+
+int[] a; 声明了一个数组变量；也可以是int a[]；但是，仅仅是这一句声明，不会创建数组
+创建数组的时候，要指明数组的长度：a = new int[5], a指向这个数组
+.length属性用于访问一个数组的长度
+
+0-100的 随机整数的获取办法有多种，下面是参考办法之一:
+(int) (Math.random() * 100)
+Math.random() 会得到一个0-1之间的随机浮点数，然后乘以100，并强转为整型即可。
+
+增强型for循环只能用来取值，却不能用来修改数组里的值
+for (int each : values) {
+            System.out.println(each);
+        }
+
+复制数组    System.arraycopy(src, srcPos, dest, destPos, length)
+src: 源数组
+srcPos: 从源数组复制数据的起始位置
+dest: 目标数组
+destPos: 复制到目标数组的起始位置
+length: 复制的长度  
+
+Arrays是针对数组的工具类，可以进行 排序，查找，复制填充等功能。 大大提高了开发人员的工作效率。
+copyOfRange	数组复制
+        // copyOfRange(int[] original, int from, int to)
+        // 第一个参数表示源数组
+        // 第二个参数表示开始位置(取得到)
+        // 第三个参数表示结束位置(取不到)
+        //int[] b = Arrays.copyOfRange(a, 0, 3);
+toString()	转换为字符串	
+        //String content = Arrays.toString(a);
+sort	排序	
+        // Arrays.sort(a);
+binarySearch	搜索	
+需要注意的是，使用binarySearch进行查找之前，必须使用sort进行排序
+如果数组中有多个相同的元素，查找结果是不确定的
+// System.out.println("数字 62出现的位置:"+Arrays.binarySearch(a, 62));
+equals	判断是否相同	
+        //Arrays.equals(a, b) 结果为boolean
+fill	填充
+        //Arrays.fill(a, 5);
