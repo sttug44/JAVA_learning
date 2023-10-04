@@ -9,6 +9,8 @@ day03： how2j.cn学习控制流程、数组,完成练习题 **(finished)**  <br
 day04： how2j.cn学习部分类与对象 **(finished)**  <br>
 day05:  how2j.cn学习部分类与对象 **(finished)**  <br>
 day06:  how2j.cn接口与继承,用java编北大魔兽世界终极版  **（finished）**  <br>
+day07:  how2j.cn用java编北大魔兽世界终极版  **（finished）**  <br>
+
 da、数字与字符串、日期、
 
 java中级<br>
